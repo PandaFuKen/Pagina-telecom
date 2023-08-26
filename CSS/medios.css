@@ -1,0 +1,27 @@
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: brown;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Cambria;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: cadetblue;
+    color: white;
+}
