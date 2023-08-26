@@ -1,3 +1,16 @@
+/*header*/
+header{
+    background-color: red;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+/* navegador */
 nav{
     list-style-type: none;
     margin: 0;
@@ -7,6 +20,7 @@ nav{
     height: 100%;
     position: fixed;
     overflow: auto;
+    
 }
 
 
@@ -26,6 +40,20 @@ li a.active{
 }
 
 li a:hover:not(.active) {
-    background-color: cadetblue;
+    background-color: rgb(14, 12, 145);
     color: white;
+}
+
+/*texto*/
+
+h1{
+    font-family: Arial;
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+    
+}
+
+p{
+    text-align: center;
 }
