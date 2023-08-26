@@ -14,14 +14,33 @@
     </header>
     
     </div>
-    <nav>
+   
+
+    <nav class="navbar">
+        <i class="icon"></i>
         <li><a href="/Paginas/inicio.html">Sistema de comunicacion</a></li>
         <li><a href="/Paginas/medios.html">Medios de transmision y sus caracteristicas</a></li>
         <li><a href="/Paginas/modula.html">Modulacion</a></li>
         <li><a href="/Paginas/tecnicas.html">Tecnicas de conmutacion</a></li>
         <li><a href="/Paginas/multi.html">Multiplexacion</a></li>
         <li><a href="/Paginas/dispositivos.html">Dispositivos de comunicacion </a></li>
-     
+       
+       <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+            </script>
     </nav>
  
     <!--Para colocar informacion-->
