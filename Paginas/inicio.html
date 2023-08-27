@@ -16,32 +16,29 @@
     </div>
    
 
-    <nav class="navbar">
-        <i class="icon"></i>
-        <li><a href="/Paginas/inicio.html">Sistema de comunicacion</a></li>
+    <nav id="mymenu" class="menu">
+       <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li>  <a href="/Paginas/inicio.html">Sistema de comunicacion</a></li>
         <li><a href="/Paginas/medios.html">Medios de transmision y sus caracteristicas</a></li>
         <li><a href="/Paginas/modula.html">Modulacion</a></li>
         <li><a href="/Paginas/tecnicas.html">Tecnicas de conmutacion</a></li>
         <li><a href="/Paginas/multi.html">Multiplexacion</a></li>
         <li><a href="/Paginas/dispositivos.html">Dispositivos de comunicacion </a></li>
        
-       <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-            </script>
+      
     </nav>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mymenu").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mymenu").style.width = "0";
+      }
+      </script>
  
     <!--Para colocar informacion-->
     <div style="margin-left: 15%;padding: 1px 16px;height: 1000px;">
