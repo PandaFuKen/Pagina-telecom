@@ -14,7 +14,6 @@ header{
 }
 
 
-
 .titulo{
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
@@ -36,7 +35,7 @@ header{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:brown;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -80,8 +79,6 @@ header{
 }
 
 
-
-
 li a{
     display: block;
     color: white;
@@ -104,14 +101,27 @@ li a:hover:not(.active) {
 
 /*texto*/
 
-h1{
+.title{
     font-family: Arial;
     text-align: center;
     font-size: 35px;
-    margin-top: 10px;
+    position: relative;
+    bottom: 30px;
+    border-radius: 25px;
+    background: rgb(5, 187, 238);
+    padding: 15px;
+    width: 500px;
+    height: 78px;
+    margin: auto;
     
 }
 
+
+
+
 p{
-    text-align: center;
+  margin-top: 2px;
+    text-align: center,
+   
+    
 }
