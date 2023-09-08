@@ -4,29 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/Inicio.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Dispositivos.css">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    
 </head>
 <body>
-    <section>
-        <h2>aqui va una imagen  y una wave </h2>
+    <header>
+        <h2 class="titulo">Telecomunicaciones</h2>
         <img src="" alt="">
-    </section>
-    <nav>
-        <li><a href="/Paginas/inicio.html">Sistema de comunicacion</a></li>
-        <li><a href="/Paginas/medios.html">Medios de transmision y sus caracteristicas</a></li>
-        <li><a href="/Paginas/modula.html">Modulacion</a></li>
-        <li><a href="/Paginas/tecnicas.html">Tecnicas de conmutacion</a></li>
-        <li><a href="/Paginas/multi.html">Multiplexacion</a></li>
-        <li><a href="/Paginas/dispositivos.html">Dispositivos de comunicacion </a></li>
-     
+    </header>
+    
+    </div>
+   
+
+    <nav id="mymenu" class="menu">
+       <li><a href="font-size:30px;javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li>  <a href="../Paginas/inicio.html">Sistema de comunicacion</a></li>
+        <li><a href="../Paginas/medios.html">Medios de transmision y sus caracteristicas</a></li>
+        <li><a href="../Paginas/modula.html">Modulacion</a></li>
+        <li><a href="../Paginas/tecnicas.html">Tecnicas de conmutacion</a></li>
+        <li><a href="../Paginas/multi.html">Multiplexacion</a></li>
+        <li><a href="../Paginas/dispositivos.html">Dispositivos de comunicacion </a></li>
+       
+      
     </nav>
+
+    <span style="color:white;position:relative; left:30px; bottom:90px;font-family:arial;font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mymenu").style.width = "350px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mymenu").style.width = "0";
+      }
+      </script>
  
     <!--Para colocar informacion-->
-    <div style="margin-left: 15%;padding: 1px 16px;height: 1000px;">
+    <div>
     
-    <h2>que pedo tilin</h2>
+    <h1 class="title">Dispositivos De Comunicacion</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum cum ipsum odit. Quidem magni, nihil id aspernatur nobis doloribus.</p>
     </div>
-  
+    
+
+    <!--Cuadro informativo de datos-->
+
 </body>
 </html>
