@@ -21,13 +21,18 @@ function openNav() {
     });
   }
 
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsById("navi").style.top = "0";
-  } else {
-    document.getElementsById("navi").style.top = "-50px";
+  var prevScrollpos = window.pageXOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navi").style.top = "0";
+    } else {
+      document.getElementById("navi").style.top = "-100px";
+    }if (prevScrollpos > currentScrollPos) {
+      document.getElementById("icono").style.top = "0";
+    } else {
+      document.getElementById("icono").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
-}
+
