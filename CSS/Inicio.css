@@ -9,10 +9,26 @@ header{
     background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(-90deg, rgb(17, 40, 143), rgb(18, 236, 189));
     width: 100%;
-    height: 100px;
+    height: 100px; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+
    
 }
+.icono{
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  left: 50px;
+  top: 15px;
+}
 
+
+body{
+  font-family: "lato" , sans-serif;
+}
 
 .titulo{
     text-shadow: 2px 2px 4px #000000;
@@ -77,31 +93,54 @@ header{
     overflow: auto;
     
 }
+/*agrega el sidenav , a tamaño grande*/
 
-
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-family: 'Arial';
-    font-size: 18px;
+.sidenav a,.dropdown-btn{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
-li a.active{
-    background-color: #04aa6d;
-    color: white;
+/*activa el mouse con el hover*/
+.sidenav a:hover , .dropdown-btn:hover{
+  color: #f1f1f1;
+}
+/* agrega y activa la clase de la clase para activar el botton*/
+.active {
+  background-color: rgb(43, 0, 128);
+  color: white;
 }
 
-li a:hover:not(.active) {
-    background-color: rgb(14, 12, 145);
-    color: white;
+.dropdown-container{
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
 }
+/* esto es opcional para cuando se desplazen los iconos hacia abajo*/
+.down{
+  float: right;
+  padding: 8px;
+}
+
 
 /*texto*/
+.main > .title{
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
 
 .title{
+  position: fixed;
     font-family: Arial;
     text-align: center;
     font-size: 35px;
@@ -113,9 +152,7 @@ li a:hover:not(.active) {
     width: 500px;
     height: 78px;
     margin: auto;
-    
 }
-
 
 
 

@@ -1,4 +1,4 @@
-/*header*/
+ /*header*/
 * {
   margin: 0;
   padding: 0;
@@ -77,27 +77,43 @@ nav {
   overflow: auto;
   
 }
+/*agrega el sidenav , a tamaño grande*/
 
-
-li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-family: 'Arial';
-  font-size: 18px;
+.sidenav a,.dropdown-btn{
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+border: none;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
 }
 
-li a.active{
-  background-color: #04aa6d;
-  color: white;
+/*activa el mouse con el hover*/
+.sidenav a:hover , .dropdown-btn:hover{
+color: #f1f1f1;
+}
+/* agrega y activa la clase de la clase para activar el botton*/
+.active {
+background-color: rgb(43, 0, 128);
+color: white;
 }
 
-li a:hover:not(.active) {
-  background-color: rgb(14, 12, 145);
-  color: white;
+.dropdown-container{
+display: none;
+background-color: #262626;
+padding-left: 8px;
 }
+/* esto es opcional para cuando se desplazen los iconos hacia abajo*/
+.down{
+float: right;
+padding: 8px;
+}
+
 
 /*texto*/
 
@@ -106,14 +122,13 @@ li a:hover:not(.active) {
   text-align: center;
   font-size: 35px;
   position: relative;
-  bottom: 25px;
+  bottom: 30px;
   border-radius: 25px;
   background: rgb(5, 187, 238);
   padding: 15px;
-  width: 800px;
-  height: 68px;
+  width: 500px;
+  height: 78px;
   margin: auto;
-  
 }
 
 
