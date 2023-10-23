@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("navbar").style.width = "400px";
+    document.getElementById("navpanda").style.width = "400px";
   }
   
   function closeNav() {
-    document.getElementById("navbar").style.width = "0";
+    document.getElementById("navpanda").style.width = "0";
   }
 
   var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -21,15 +21,13 @@ function openNav() {
     });
   }
 
-  window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsById("navi").style.top = "0";
   } else {
-    navbar.classList.remove("sticky");
+    document.getElementsById("navi").style.top = "-50px";
   }
+  prevScrollpos = currentScrollPos;
 }
