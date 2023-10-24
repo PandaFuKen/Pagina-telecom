@@ -29,7 +29,7 @@ function openNav() {
     } else {
       document.getElementById("navi").style.top = "-100px";
     }if (prevScrollpos > currentScrollPos) {
-      document.getElementById("icono").style.top = "0";
+      document.getElementById("icono").style.top = "10px";
     } else {
       document.getElementById("icono").style.top = "-100px";
     }
