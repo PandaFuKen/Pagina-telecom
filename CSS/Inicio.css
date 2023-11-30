@@ -219,3 +219,7 @@ color: white;
 .control{
   font-size: 20px;
 }
+
+img{
+  float: left;
+}
